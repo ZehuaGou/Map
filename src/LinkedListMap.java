@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public class LinkedListMap<K, V> implements Map<K, V> {
 
     private class Node {
-        public K key;
+        K key;
 
-        public V value;
+        V value;
 
-        public Node next;
+        Node next;
 
-        public Node(K key, V value, Node next) {
+        Node(K key, V value, Node next) {
             this.key = key;
             this.value = value;
             this.next = next;
